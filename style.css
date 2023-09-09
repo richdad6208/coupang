@@ -2,4 +2,5 @@ input:active {
   outline: none;
   background-color: #1e90ff;
   word-break: keep-all;
+  justify-content: stretch;
 }

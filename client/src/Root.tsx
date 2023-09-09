@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import styled, { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 *,
@@ -63,18 +63,11 @@ select {
 }
 `;
 
-const Container = styled.div`
-  width: min(1100px, 100% - 2rem);
-  margin-inline: auto;
-`;
-
 function Root() {
   return (
     <>
       <GlobalStyle />
-      <Container>
-        <Outlet />
-      </Container>
+      <Outlet />
     </>
   );
 }

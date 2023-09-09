@@ -2,7 +2,6 @@ import styled from "styled-components";
 export const PrimaryHeader = styled.header`
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   h1 {
     display: flex;
     align-items: center;
@@ -57,7 +56,6 @@ export const Category = styled.div`
   justify-content: center;
   align-items: center;
   background: dodgerblue;
-  padding-block: 1.5rem;
   color: white;
   font-size: 13px;
   width: 110px;
@@ -90,6 +88,41 @@ export const Snb = styled.div`
     display: flex;
     li {
       padding: 0.7em;
+    }
+  }
+`;
+
+export const GnbNavigationWrapper = styled.div`
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding-inline: 1em;
+  word-break: keep-all;
+  & > div {
+    width: 20px;
+  }
+  nav {
+    width: 830px;
+    overflow: hidden;
+  }
+  ul {
+    display: flex;
+    gap: 20px;
+    li {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12px;
+      div {
+        width: 20px;
+      }
+      p {
+        width: max-content;
+      }
+      span {
+        width: 12px;
+        margin-left: -2px;
+      }
     }
   }
 `;

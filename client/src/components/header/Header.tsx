@@ -1,5 +1,6 @@
 import {
   Category,
+  GnbNavigationWrapper,
   InputWrapper,
   PrimaryHeader,
   Snb,
@@ -66,7 +67,93 @@ function Header() {
               <p>마이쿠팡</p>
             </div>
           </div>
-          <div className="down-wrapper">메뉴</div>
+          <GnbNavigationWrapper>
+            <div>
+              <img src="./images/icon-left-arr.png" alt="" />
+            </div>
+            <nav>
+              <ul>
+                <li>
+                  <div>
+                    <img src="./images/gnb-menu-item01.png" alt="" />
+                  </div>
+                  <p>로켓배송</p>
+                </li>
+                <li>
+                  <div>
+                    <img src="./images/gnb-menu-item02.png" alt="" />
+                  </div>
+                  <p>로켓프레시</p>
+                  <span>
+                    <img src="./images/icon-new.png" alt="" />
+                  </span>
+                </li>
+                <li>
+                  <div>
+                    <img src="./images/gnb-menu-item03.png" alt="" />
+                  </div>
+                  <p>2023 추석</p>
+                  <span>
+                    <img src="./images/icon-new.png" alt="" />
+                  </span>
+                </li>
+                <li>
+                  <div>
+                    <img src="./images/gnb-menu-item04.png" alt="" />
+                  </div>
+                  <p>쿠팡비즈</p>
+                  <span>
+                    <img src="./images/icon-new.png" alt="" />
+                  </span>
+                </li>
+                <li>
+                  <div>
+                    <img src="./images/gnb-menu-item05.png" alt="" />
+                  </div>
+                  <p>로켓직구</p>
+                </li>
+                <li>
+                  <p>골드박스</p>
+                </li>
+                <li>
+                  <p>와우회원할인</p>
+                </li>
+                <li>
+                  <p>이벤트/쿠폰</p>
+                </li>
+                <li>
+                  <div>
+                    <img src="./images/gnb-menu-item06.png" alt="" />
+                  </div>
+                  <p>반품마켓</p>
+                </li>
+                <li>
+                  <div>
+                    <img src="./images/gnb-menu-item07.png" alt="" />
+                  </div>
+                  <p>착한상점</p>
+                  <span>
+                    <img src="./images/icon-new.png" alt="" />
+                  </span>
+                </li>
+                <li>
+                  <p>기획전</p>
+                </li>
+                <li>
+                  <div>
+                    <img src="./images/gnb-menu-item08.png" alt="" />
+                  </div>
+                  <p>여행/티켓</p>
+                  <span>
+                    <img src="./images/icon-new.png" alt="" />
+                  </span>
+                </li>
+              </ul>
+            </nav>
+            <div>
+              <img src="./images/icon-right-arr.png" alt="" />
+            </div>
+          </GnbNavigationWrapper>
         </WrapperWithOutCategory>
       </PrimaryHeader>
     </>
